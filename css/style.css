@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
 img{
     display: block;
     width: 100%;
@@ -23,6 +30,7 @@ a{
 
 body{
     background-color: #181818;
+    font-family: 'Pretendard-Regular';
 }
 
 #intro{
@@ -534,6 +542,7 @@ body{
     border: 1px solid white;
     border-radius: 50px;
     text-align: center;
+    cursor: pointer;
 }
 
 .slide_scroll_btn:hover{
@@ -581,7 +590,7 @@ body{
 
 
 
-#instergram{
+#instagram{
     width: 100%;
     height: 100%;
     display: flex;
@@ -593,14 +602,14 @@ body{
 }
 
 
-.title_instergram{
+.title_instagram{
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 5%;
     color: white;
 }
 
-.instergram_container{
+.instagram_container{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -608,7 +617,7 @@ body{
     gap: 16px;
 }
 
-.instergram_text_content_container{
+.instagram_text_content_container{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -616,12 +625,12 @@ body{
     height: 100%;
 }
 
-.instergram_id{
+.instagram_id{
     font-size: 20px;
     color: white;
 }
 
-.instergram_btn{
+.instagram_btn{
     font-size: 16px;
     font-weight: bold;
     width: 80px;
@@ -631,15 +640,16 @@ body{
     border-radius: 50px;
     text-align: center;
     color: white;
+    cursor: pointer;
 }
 
-.instergram_btn:hover{
+.instagram_btn:hover{
     background-color: white;
     color: #141414;
     transition: 0.3s;
 }
 
-.instergram_content_container{
+.instagram_content_container{
     width: 100%;
     height: 100%;
     max-width: 1280px;
@@ -650,27 +660,22 @@ body{
     flex-wrap: nowrap;
 }
 
-.instergram_content{
+.instagram_content{
     overflow: hidden;
     cursor: pointer;
 }
 
-.instergram_img{
+.instagram_img{
     height: 100%;
     object-fit: cover;
     
     transition: 0.2s;
 }
 
-.instergram_content:hover>img{
+.instagram_content:hover>img{
     filter: brightness(0.7);
     transform: scale(1.1);
 }
-
-
-
-
-
 
 .second_loop{
     overflow: hidden;
@@ -765,7 +770,6 @@ body{
     justify-content: center;
 }
 
-/* 루프 관련 다시 위에꺼 보고 만들 것 */
 
 .inquiry_loop_content_container{
     width: 100%;
@@ -899,10 +903,6 @@ body{
     }
 }
 
-@media screen and (max-width: 1320px){
-/* loop_content 크기 설정해야함. */
-    
-}
 
 @media screen and (max-width: 1300px){
 
@@ -999,7 +999,6 @@ body{
     }
 
     }
-
 
 @media screen and (max-width: 760px){
 
@@ -1120,23 +1119,15 @@ body{
         gap: 0;
     }
 
-    /* #punto_scroll_section{
-        display: none;
-    } */
-
-    /* #mobile_slide{
-        display: block;
-    } */
-
     .nav_menu_text_container{
         font-size: 18px;
     }
 
-    .instergram_id{
+    .instagram_id{
         font-size: 18px;
     }
 
-    .instergram_btn{
+    .instagram_btn{
         font-size: 12px;
         width: 50px;
         height: 10px;
